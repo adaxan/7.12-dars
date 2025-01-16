@@ -2,8 +2,7 @@ import {React , useEffect} from "react";
 import Navbar from "./layout/Navbar";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import ArticleCard from "./pages/ArticleCard";
-import CreateArticle from "./pages/CreateArticle";
-import Comment from "./pages/Comment";
+import CreateArticle from "./pages/CreateArticle";``
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import ArticleDetail from "./pages/ArticleDetail";
@@ -48,14 +47,6 @@ function App() {
           element={
             <PrivateRoute>
               <Navbar><ArticleDetail /></Navbar>
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path="/comments"
-          element={
-            <PrivateRoute>
-              <Navbar><Comment /></Navbar>
             </PrivateRoute>
           }
         />
